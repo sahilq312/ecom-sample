@@ -1,7 +1,10 @@
+import { Navbar } from "@/components/navbar";
 import Image from "next/image";
 
 const Page = () => {
   return (
+    <Navbar>
+
     <div className="bg-gray-100 h-screen py-8">
       <div className="container mx-auto px-4">
         <h1 className="text-2xl font-semibold mb-4">Shopping Cart</h1>
@@ -77,6 +80,7 @@ const Page = () => {
         </div>
       </div>
     </div>
+    </Navbar>
   );
 };
 export default Page;
