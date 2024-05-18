@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Page = () => {
   return (
     <div className="bg-gray-100 h-screen py-8">
@@ -19,7 +21,9 @@ const Page = () => {
                   <tr>
                     <td className="py-4">
                       <div className="flex  items-center flex-col lg:flex-row">
-                        <img
+                        <Image
+                          width={150}
+                          height={150}
                           className="h-16 w-16 mr-4"
                           src="https://via.placeholder.com/150"
                           alt="Product image"
