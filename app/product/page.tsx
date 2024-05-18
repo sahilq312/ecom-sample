@@ -1,5 +1,6 @@
 
 import { Products } from "@/actions/productList";
+import Rating from "@/components/rating";
 import { getFirstThreeWords } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -51,6 +52,7 @@ const ProductListPage = async() => {
                     <span aria-hidden="true" className="absolute inset-0" />
                     {getFirstThreeWords(product.title)}
                   </h3>
+                <Rating rate={product.rating.rate} />
                 </div>
                 <p className="text-sm font-medium text-gray-900">
                   {" "}
